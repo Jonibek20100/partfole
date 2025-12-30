@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #060b1f;
+  color: #fff;
+}
+.socials img{
+  width: 50px;
+}
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #1f2553;
+    box-shadow: 0px 0px 25px rgb(67, 69, 120);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+.katta{
+    width: 100%;
+    height: 100vh;
+}
+.logo {
+  background: linear-gradient(90deg, #ff3c8a, #5ddcff);
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+}
+
+.hero-text {
+  max-width: 500px;
+  font-size: 40px;
+
+}
+
+.hello {
+  font-size: 50px;
+  color: #aaa;
+}
+
+.name {
+  font-size: 52px;
+  color: #ff3c8a;
+}
+
+.job {
+  margin: 10px 0 25px;
+  color: #ddd;
+}
+
+.socials {
+  padding: 8px 12px;
+  display: flex;
+  gap: 25px;
+}
+
+.cv-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff3c8a, #5ddcff);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.hero-img {
+  position: relative;
+}
+
+.hero-img img {
+  width: 400px;
+  position: relative;
+  border-radius: 45px 20% 10px 25% ; 
+  box-shadow: 0px 0px 15px rgb(39, 39, 216);
+}
+
+
+
+.blue {
+  width: 180px;
+  height: 180px;
+  background: #5ddcff;
+  top: 90px;
+  right: -20px;
+}
+/* hero */
+
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  background: #060b1f;
+}
+
+.about-img {
+  position: relative;
+  width: 40%;
+}
+
+.about-img img {
+  width: 280px;
+  position: relative;
+  z-index: 2;
+  border-radius: 45px;
+}
+
+.bg-shape {
+  position: absolute;
+  border-radius: 30px;
+}
+
+.bg-shape.pink {
+  width: 220px;
+  height: 160px;
+  background: #ff3c8a;
+  top: 40px;
+  left: 40px;
+}
+
+.bg-shape.blue {
+  width: 160px;
+  height: 120px;
+  background: #5ddcff;
+  top: 90px;
+  left: 90px;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  color: #ff3c8a;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+/* Skills */
+.Skills{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.koil img{
+  width: 150px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.koil .img12{
+  width: 200px;
+  background-color: #1f2553;
+}
+.koil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+}
+/* Portfolio */
+.Portfolio{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.img13 img{
+  width: 500px;
+  box-shadow: 0px 0px 10px #555cd3;
+}
+.kjh{
+  display: flex;
+  gap: 50px;
+}
+.img13{
+  display: grid;
+  gap: 50px;
+}
+/* contact */
+.contact{
+  height: 75vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form145 input, textarea, button{
+  width: 500px;
+  padding: 20px;
+  border-radius: 25px;
+  outline: none;
+}
+.form145{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.form145 button{
+  background: linear-gradient(90deg, #ff3c8a, #5ddcff);
+  width: 500px;
+}
