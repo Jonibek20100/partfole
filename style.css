@@ -34,7 +34,7 @@ body {
 }
 .katta{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     align-items: center;
 }
 .logo {
@@ -51,6 +51,7 @@ body {
   text-decoration: none;
   color: #ccc;
   transition: 0.4s;
+  font-size: 20px;
 }
 
 .menu a:hover {
@@ -186,16 +187,39 @@ body {
   line-height: 1.7;
   margin-bottom: 15px;
 }
+.about-text button{
+  background-color: #663cff00;
+  color: white;
+  border: solid 1px white;
+  transition: 0.5s;
+}
+.about-text button:hover{
+  box-shadow: 0px 0px 12px #525afc;
+  font-size: 20px;
+  border: solid 1px rgb(6, 18, 248);
+  color: #2200ff;
+}
 /* Skills */
 .Skills{
   height: 100vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+    padding: 80px;
   flex-direction: column;
   gap: 100px;
 }
+.texvo h4{
+  color: #2200ff;
+  font-size: 25px;
+}
+.texvo{
+  height: 50vh;
+  display: grid;
+  align-items: center;
 
+}
 .voip{
   width: 200px;
   height: 210px;
@@ -208,7 +232,10 @@ body {
   justify-content: center;
   gap: 150px;
   align-items: center;
+  transition: 0.5s;
 }
+
+
 .koil{
   display: flex;
   align-items: center;
@@ -217,16 +244,18 @@ body {
 }
 /* Portfolio */
 .Portfolio{
-  height: 110vh;
+  height: 100vh;
   display: flex;
+    padding: 80px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 100px;
+  gap: 20px;
 }
 .img13 img{
   width: 500px;
   box-shadow: 0px 0px 10px #555cd3;
+  border-radius: 20px;
 }
 .kjh{
   display: flex;
@@ -238,6 +267,7 @@ body {
 }
 /* contact */
 .contact{
+    padding: 80px;
   height: 100vh;
   display: grid;
   justify-content: center;
@@ -257,87 +287,18 @@ body {
   gap: 25px;
 }
 .form145 button{
-  background: linear-gradient(90deg, #4c3cff, #5ddcff);
+background-color: #200d97;
+color: white;
+border:none;
+font-size: 15px;
   width: 500px;
   transition: 0.4s;
 }
 .form145 button:hover{
-  width: 500px;
-  background: linear-gradient(50deg,  #5ddcff,#4c3cff);
+  background-color: #060b1f;
+  font-size: 20px;
+  box-shadow: 0px 0px 12px #525afc;
+  border: solid 1px rgb(6, 18, 248);
+  color: #2200ff;
 }
-/* medya  */
-@media (max-width: 768px) {
 
-  /* Navbar */
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* Hero */
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 30px 15px;
-  }
-
-  .hero-text h1 {
-    font-size: 36px;
-  }
-
-  .hero-img img {
-    width: 220px;
-  }
-
-  .socials {
-    justify-content: center;
-  }
-
-  /* About */
-  .about {
-    flex-direction: column;
-    padding: 30px 15px;
-    text-align: center;
-  }
-
-  .about-img img {
-    width: 220px;
-    margin-bottom: 20px;
-  }
-
-  /* Skills */
-  .img12 {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  /* Portfolio */
-  .img13,
-  .kjh {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .img13 img {
-    width: 100%;
-  }
-
-  /* Contact */
-  .form145 {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .form145 input,
-  .form145 textarea,
-  .form145 button {
-    width: 100%;
-  }
-}
