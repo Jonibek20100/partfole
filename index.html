@@ -10,46 +10,57 @@
 
 
 <div class="katta" id="Home">
-    <header class="navbar">
-  <a href="" class="logo" style=" font-size: 30px;">J•I. <p style="color: #663cff;">Code</p></a>
-  <nav class="menu">
+  
+<header class="navbar">
+  <a href="" class="logo" style="font-size: 30px;">J•I.
+    <p class="rtyu" style="color:#663cff;"></p>
+  </a>
+
+  <nav class="menu" id="menu">
     <a href="#Home">Home</a>
-    <a href="#About">About</a>  
+    <a href="#About">About</a>
     <a href="#Skills">Skills</a>
     <a href="#Portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
   </nav>
+
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
- 
-<div class="hero" inert="Home">
+
+ <div class="hero">
   <div class="hero-text">
     <p class="hello">Hi, I'm</p>
-    <h1 class="name">Jonibek</h1>
+    <h1 class="name"></h1>
     <h3 class="job">Web Developer</h3>
 
     <div class="socials">
-      <a href="https://instagram.com/jonibek_js_">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB3UlEQVR4AeyV4XXCIBRGtZPoJjpJdZLqJNpJtJPUTpLemwNIEhI1Vfuj9fAEHvAu3wP0ZfJLn3/w0xL/lFRXVbXAVtgsKnsoGJCwT2AHbIctsLrcHRxgO+oKgrCkkn5q3w0MSJjqhK2AlMoxOn8EBmYqD9SqExYVnQCssUaZTqfjwUC8KKoTprp0boGyp15ir1he3EzqX60YoOpMpRdFdSlIaBhY4JZ+aUPv+FMZBAdYri6mMgUIjS1pnIe2m2tnIQydqyIYoDADuPOSuhjBM5sD3bBGmNmIY43aObkjgVk4w0oXJZ+ft5cE006sG4SyyGOgOpcExuXivlQynMoeoEW1E6BmpFdpWNUPJpIBPScviEHbk+2rMD0ToBsCexxUg+WjPZorrsfYwBETEDfh86gvD343VM8Dqsq3unP5K62LUzvgOGAtCFtjKtNVW4B6NHX/0hfrbwOXAgI1tVdDieERUTXLoOLm1NS75gKmyTQ6avFNngH+EtS2MeA8hi/An8hiOsPEuyv25vsCvHg+sSK8dLHc0FjFNdQAmsExn59PT1e04mYcHAP2t7mYPuAqz1Pf+EcSGO1mMMF7VRiU8Zh6s2Jbd8duBnciFBzAPftiVuL0h4Bj8KH674G/AQAA//9+VSl/AAAABklEQVQDAAh3sj2s871/AAAAAElFTkSuQmCC"/>
-</a>
+      <a href="https://t.me/desrjk" target="_blank">
+        <img src="" target="_blank">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB3UlEQVR4AeyV4XXCIBRGtZPoJjpJdZLqJNpJtJPUTpLemwNIEhI1Vfuj9fAEHvAu3wP0ZfJLn3/w0xL/lFRXVbXAVtgsKnsoGJCwT2AHbIctsLrcHRxgO+oKgrCkkn5q3w0MSJjqhK2AlMoxOn8EBmYqD9SqExYVnQCssUaZTqfjwUC8KKoTprp0boGyp15ir1he3EzqX60YoOpMpRdFdSlIaBhY4JZ+aUPv+FMZBAdYri6mMgUIjS1pnIe2m2tnIQydqyIYoDADuPOSuhjBM5sD3bBGmNmIY43aObkjgVk4w0oXJZ+ft5cE006sG4SyyGOgOpcExuXivlQynMoeoEW1E6BmpFdpWNUPJpIBPScviEHbk+2rMD0ToBsCexxUg+WjPZorrsfYwBETEDfh86gvD343VM8Dqsq3unP5K62LUzvgOGAtCFtjKtNVW4B6NHX/0hfrbwOXAgI1tVdDieERUTXLoOLm1NS75gKmyTQ6avFNngH+EtS2MeA8hi/An8hiOsPEuyv25vsCvHg+sSK8dLHc0FjFNdQAmsExn59PT1e04mYcHAP2t7mYPuAqz1Pf+EcSGO1mMMF7VRiU8Zh6s2Jbd8duBnciFBzAPftiVuL0h4Bj8KH674G/AQAA//9+VSl/AAAABklEQVQDAAh3sj2s871/AAAAAElFTkSuQmCC">
+      </a>
 
-<a href="https://t.me/desrjk" >
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACPklEQVR4AeyVv24TQRDG72h4jbhA8AiIykiIJ0hPeAJooALZgRIqeABTI1GgVKmSSFEeI/abOL9fshvdevfu1palNLHm8+zNzcw3s7d/njQP9HskLk78er0+CJiiB1FMUDD2TjUEks3RZ8QtAxwPAn9lyd+cmF4pEhM0JUKyGdoxais5wHtGHgsoxheJCVqAfYgFFHNlxFSpowG7Eq8IPAdR/GTmjM+3OiPGWpwa7DWyatt20rbta5y75FnOEvFYt3Z0TGKTi/eMtaESGcyTEDPNWWVJqqY5bu86mqPPA/7gYwEW47S6oFyYXWLtU/zuJSG+t5YHkrq9XlDgV3Aa8AX3pxTh9rkl57lLymMutcR2J+lzUvwG38DbgO/oXxTxDG333W+LqSy1xBch/BD9BmyKRRzStd86+m76JM+1xCY08JV/PXgZ7HvtOBKvQ/KSiu9Gv6/BtR3HFXlpUA+ugn2vxO9C0r/oE7Ap/zH4DtVEX8e9qO3Yfbhg8VyT6QP4DP4FfEJ/5N2Kle2W2qnj+C3JlYn3sAfHEpIfwFUsfjKOpN5mWWAwJLlrOzbWTmZ05cm0QB8FuL89qYZIG4szSURCHF6ObQcLOCKBN46QUBumXkm61Ssh1gCqDgD8tpGsmRKxx15W4TYsG75eld5giTkjDtPtbbMPcnNkpFaQEWvskHvbZNOkzwgk9DabkKsYXyQ2KQFOkdvH7ifY1KMgTpHQPU1YWXqJu+5ksgivxlF044bGVcRDCXZ992DENwAAAP//qSij3wAAAAZJREFUAwBJj+49IoKyFwAAAABJRU5ErkJggg=="/>
-</a>
+      <a href=" https://instagram.com/jonibek_js_" target="_blank">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACPklEQVR4AeyVv24TQRDG72h4jbhA8AiIykiIJ0hPeAJooALZgRIqeABTI1GgVKmSSFEeI/abOL9fshvdevfu1palNLHm8+zNzcw3s7d/njQP9HskLk78er0+CJiiB1FMUDD2TjUEks3RZ8QtAxwPAn9lyd+cmF4pEhM0JUKyGdoxais5wHtGHgsoxheJCVqAfYgFFHNlxFSpowG7Eq8IPAdR/GTmjM+3OiPGWpwa7DWyatt20rbta5y75FnOEvFYt3Z0TGKTi/eMtaESGcyTEDPNWWVJqqY5bu86mqPPA/7gYwEW47S6oFyYXWLtU/zuJSG+t5YHkrq9XlDgV3Aa8AX3pxTh9rkl57lLymMutcR2J+lzUvwG38DbgO/oXxTxDG333W+LqSy1xBch/BD9BmyKRRzStd86+m76JM+1xCY08JV/PXgZ7HvtOBKvQ/KSiu9Gv6/BtR3HFXlpUA+ugn2vxO9C0r/oE7Ap/zH4DtVEX8e9qO3Yfbhg8VyT6QP4DP4FfEJ/5N2Kle2W2qnj+C3JlYn3sAfHEpIfwFUsfjKOpN5mWWAwJLlrOzbWTmZ05cm0QB8FuL89qYZIG4szSURCHF6ObQcLOCKBN46QUBumXkm61Ssh1gCqDgD8tpGsmRKxx15W4TYsG75eld5giTkjDtPtbbMPcnNkpFaQEWvskHvbZNOkzwgk9DabkKsYXyQ2KQFOkdvH7ifY1KMgTpHQPU1YWXqJu+5ksgivxlF044bGVcRDCXZ992DENwAAAP//qSij3wAAAAZJREFUAwBJj+49IoKyFwAAAABJRU5ErkJggg==">
+      </a>
 
-<a href="https://github.com/Jonibek20100" >
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACTklEQVR4AdSWAZLCIAxFy57EPcnqSVZPop5EPYneRG/S/Y8hlAJt0XHGWYdvICT5SUTar+5Dn/9D3Pf9WtgGHCRZg9UzzWuqWMFXwkm4K/hVOAXsJVmDu/avQlMCi8QKBAmEW5EsBV3LhgRIctZ2kliEVEklECreUwOf2eqrxJCKhiqpQNOXBhVTPbIIUCWWFe2V8OOmbyDRNB6ySu2rlRfEqvYgx7TSi3NuIx0gIIHPWhtS3cY59629o2CDimm9rb0cEYsUI06q3wxfEHXOuZvgA0vuEqQ6ksDN+zAJ2IfYYdl1I2Jpi8yke9cYFZQTjzbF+FBlVoWWbUM+VAxSBy4dOup1kThvhd/tukuQr4iab0msyFGpuY2nqzVHyZpv5IgVyzAqNbeRt8v0LXLWNyWuBaslU7Nr1cV4KXEtw2jYGjmxq/1DYvsjsU5iVCbOvxOHLjGZnP7kOylHJA5GedXcYLXMg3ldKFl88E0NRrFz4vQvYIbcOouPOWMQKfc8MJXJNPb45lIruKeNkPuW+5k1FfCk4cJnbsG8FBmXA/u9FMW+dF2IzdQjrxilZUbWkLJGspe3Dx3gfMwdRIrALqIgDpkZ0Smsd/Lw0JqnkpbDkA57MCiHGdcunRw0mhXE0tEWHm0E4iUOJ5zPIihIsZ8BfsQqTKrEWIkEB8h5cPD7AV6F2G7BJCnOk8RsBnJaTAL8hoCtJRyD76TdLDFeCkCLqZ42c4hQ10ByEMrF8fPUbKJukdgsFc2/ddg6l9rnTWSR0Pyaic3hXfJjxH8AAAD//7zajX4AAAAGSURBVAMA4iXZPfwAVJEAAAAASUVORK5CYII="/>
-</a>
+      <a href="https://github.com/Jonibek20100" target="_blank">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACTklEQVR4AdSWAZLCIAxFy57EPcnqSVZPop5EPYneRG/S/Y8hlAJt0XHGWYdvICT5SUTar+5Dn/9D3Pf9WtgGHCRZg9UzzWuqWMFXwkm4K/hVOAXsJVmDu/avQlMCi8QKBAmEW5EsBV3LhgRIctZ2kliEVEklECreUwOf2eqrxJCKhiqpQNOXBhVTPbIIUCWWFe2V8OOmbyDRNB6ySu2rlRfEqvYgx7TSi3NuIx0gIIHPWhtS3cY59629o2CDimm9rb0cEYsUI06q3wxfEHXOuZvgA0vuEqQ6ksDN+zAJ2IfYYdl1I2Jpi8yke9cYFZQTjzbF+FBlVoWWbUM+VAxSBy4dOup1kThvhd/tukuQr4iab0msyFGpuY2nqzVHyZpv5IgVyzAqNbeRt8v0LXLWNyWuBaslU7Nr1cV4KXEtw2jYGjmxq/1DYvsjsU5iVCbOvxOHLjGZnP7kOylHJA5GedXcYLXMg3ldKFl88E0NRrFz4vQvYIbcOouPOWMQKfc8MJXJNPb45lIruKeNkPuW+5k1FfCk4cJnbsG8FBmXA/u9FMW+dF2IzdQjrxilZUbWkLJGspe3Dx3gfMwdRIrALqIgDpkZ0Smsd/Lw0JqnkpbDkA57MCiHGdcunRw0mhXE0tEWHm0E4iUOJ5zPIihIsZ8BfsQqTKrEWIkEB8h5cPD7AV6F2G7BJCnOk8RsBnJaTAL8hoCtJRyD76TdLDFeCkCLqZ42c4hQ10ByEMrF8fPUbKJukdgsFc2/ddg6l9rnTWSR0Pyaic3hXfJjxH8AAAD//7zajX4AAAAGSURBVAMA4iXZPfwAVJEAAAAASUVORK5CYII=">
+      </a>
+    </div>
 
-</div>
-<button class="nikoe">Download CV</button>
-</div>
-  
+    <button class="nikoe">Download CV</button>
+  </div>
 
   <div class="hero-img">
-    
-    <img src="img1.png" alt="girl">
+    <img src="img1.png" alt="hero image">
   </div>
 </div>
+
+
 </div>
 <hr>
 <!-- about -->
@@ -196,6 +207,11 @@
 
   </div>
 </div>
+<!-- footer -->
+
 </div>
+
 </body>
+
+
 </html>

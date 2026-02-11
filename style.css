@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +14,13 @@
 }
 
 body {
-  background: #060b1f;
+  background: #041d3e;
   color: #fff;
-
+  
+}
+body::selection{
+  background-color: #fcf352;
+  color: blue;
 }
 .socials img{
   width: 50px;
@@ -27,29 +33,52 @@ body {
 /* NAVBAR */
 .navbar {
     width: 100%;
-    height: 70px;
-    background-color: #1f2553;
-    box-shadow: 0px 0px 25px rgb(75, 77, 155);
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
-    position: fixed;      /* MUHIM */
-    inset: 0;             /* top:0 left:0 right:0 bottom:0 */
-    background: linear-gradient(135deg, #0f172a, #020617);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(5, 37, 88, 0.4); /* Shaffof fon */
+    backdrop-filter: blur(5px);       /* Xiralik */
+    -webkit-backdrop-filter: blur(10px); /* Safari uchun */
+
+    box-shadow: 0px 0px 25px rgb(75, 77, 155);
     z-index: 899;
+    background: linear-gradient(
+    135deg,
+    rgba(5, 37, 88, 0.5),
+    rgba(82, 127, 181, 0.4),
+    rgba(48, 68, 93, 0.4),
+    rgba(1, 16, 35, 0.5)
+);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+
 }
+
+
 .katta{
     width: 100%;
     height: 100vh;
     align-items: center;
+      font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .logo {
   color: white;
   text-decoration: none;
   font-size: 22px;
   display: flex;
-  
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   
 }
 
@@ -64,7 +93,7 @@ body {
 
 .menu a:hover {
   color: #1865ae;
-   font-size: 25px;
+   font-size: 22px;
 
 }
 
@@ -78,9 +107,10 @@ body {
 }
 
 .hero-text {
-  max-width: 500px;
   font-size: 40px;
-
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hello {
@@ -88,7 +118,8 @@ body {
   color: #aaa;
 }
 
-.name {
+.name::before {
+  content: "Jonibek";
   font-size: 52px;
   color: #663cff;
 }
@@ -99,27 +130,42 @@ body {
 }
 
 .socials {
-  padding: 8px 12px;
   display: flex;
   gap: 25px;
+  margin-bottom: 25px;
 }
 
- .nikoe{
+.socials img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+.rtyu::before{
+  content: "Code";
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nikoe {
   width: 400px;
   padding: 20px;
   border-radius: 25px;
   background-color: #3911c9fb;
   color: white;
   border: none;
-  transition: 0.5s;
-}
- .nikoe:hover{
-  box-shadow: 0px 0px 12px #525afc;
-  font-size: 20px;
-  border: solid 1px rgb(6, 18, 248);
-  color: #2200ff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+.nikoe:hover {
+  font-size: 15px;
+  color: #00a2ff;
+   background: #1a2942;
+  border: 1px solid #355cff;
+}
 
 
 /* IMAGE */
@@ -151,7 +197,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 80px;
-  background: #060b1f;
+ 
 }
 
 .about-img {
@@ -189,6 +235,9 @@ body {
 
 .about-text {
   width: 50%;
+    font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .about-text h2 {
@@ -347,6 +396,7 @@ body {
 }
 /* contact */
 .contact {
+  
   padding: 70px 0;
   text-align: center;
 }
@@ -428,3 +478,40 @@ body {
   background: #1f50d8;
 }
 
+/* ... */
+/* ===== TABLET (1024px dan kichik) ===== */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 40px;
+        height: 60px;
+    }
+}
+
+/* ===== PLANSHET (768px dan kichik) ===== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 25px;
+        height: 60px;
+    }
+}
+
+/* ===== TELEFON (480px dan kichik) ===== */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+        height: 55px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: none; /* mobil menyu uchun */
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
